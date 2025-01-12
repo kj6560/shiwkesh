@@ -1,2 +1,0 @@
-# shiwkesh
-online store
