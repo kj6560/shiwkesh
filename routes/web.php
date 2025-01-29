@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\backend\AdminController;
 use App\Http\Controllers\frontend\SiteController;
 use Illuminate\Support\Facades\Route;
 
@@ -10,3 +11,6 @@ Route::get('/blog',[SiteController::class,'blog'])->name('blog');
 Route::get('/blogDetails',[SiteController::class,'blogDetails'])->name('blogDetails');
 Route::get('/services',[SiteController::class,'services'])->name('services');
 Route::get('/portfolio',[SiteController::class,'portfolio'])->name('portfolio');
+Route::get('/portfolioDetails', [SiteController::class, 'portfolioDetails'])->name('portfolioDetails');
+Route::get('/login',[AdminController::class,'login'])->name('login');
+Route::post('/authenticate', [AdminController::class, 'authenticate'])->name('authenticate');
