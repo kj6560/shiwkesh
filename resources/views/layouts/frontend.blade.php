@@ -26,14 +26,6 @@
 
   <!-- Main CSS File -->
   <link href="{{asset('theme')}}/css/main.css" rel="stylesheet">
-
-  <!-- =======================================================
-  * Template Name: HeroBiz
-  * Template URL: https://bootstrapmade.com/herobiz-bootstrap-business-template/
-  * Updated: Aug 07 2024 with Bootstrap v5.3.3
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
 </head>
 
 <body class="index-page">
@@ -74,6 +66,11 @@
             </ul>
           </li> -->
           <li><a href="/contactUs">Contact</a></li>
+          @if (Auth::check())
+          <li><a href="/logout">Logout</a></li>
+          @else
+          <li><a href="/login">Login</a></li>
+          @endif
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>

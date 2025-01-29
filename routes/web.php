@@ -13,6 +13,7 @@ Route::get('/services',[SiteController::class,'services'])->name('services');
 Route::get('/portfolio',[SiteController::class,'portfolio'])->name('portfolio');
 Route::get('/portfolioDetails', [SiteController::class, 'portfolioDetails'])->name('portfolioDetails');
 Route::get('/login',[AdminController::class,'login'])->name('login');
+Route::get('/logout', [AdminController::class, 'logout'])->name('logout');
 Route::get('/register',[AdminController::class,'register'])->name('register');
 Route::post('/authenticate', [AdminController::class, 'authenticate'])->name('authenticate');
 Route::post('/storeUser', [AdminController::class, 'storeUser'])->name('storeUser');
