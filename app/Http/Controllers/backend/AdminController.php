@@ -56,4 +56,8 @@ class AdminController extends Controller
         $request->session()->regenerateToken();
         return redirect('/');
     }
+    public function generalSettings()
+    {
+        return view('backend.settings.generalSettings');
+    }
 }

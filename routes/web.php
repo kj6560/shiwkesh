@@ -20,4 +20,5 @@ Route::post('/storeUser', [AdminController::class, 'storeUser'])->name('storeUse
 
 Route::middleware(['auth:web'])->group(function () {
     Route::get('/dashboard', [AdminController::class, 'index'])->name('dashboard');
+    Route::get('/generalSettings', [AdminController::class, 'generalSettings'])->name('generalSettings');
 });
