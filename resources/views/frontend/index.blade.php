@@ -25,32 +25,32 @@
             <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="100">
                 <div class="service-item position-relative">
                     <div class="icon"><i class="bi bi-activity icon"></i></div>
-                    <h4><a href="" class="stretched-link">Lorem Ipsum</a></h4>
-                    <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
+                    <h4><a href="" class="stretched-link">Gather Your Thoughts</a></h4>
+                    <p>Discuss your thoughts with us regarding a product you desire to create</p>
                 </div>
             </div><!-- End Service Item -->
 
             <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="200">
                 <div class="service-item position-relative">
                     <div class="icon"><i class="bi bi-bounding-box-circles icon"></i></div>
-                    <h4><a href="" class="stretched-link">Sed ut perspici</a></h4>
-                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
+                    <h4><a href="" class="stretched-link">Connect the possibilities</a></h4>
+                    <p>Elaborate a well thought of features and requirements to us regarding your project</p>
                 </div>
             </div><!-- End Service Item -->
 
             <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="300">
                 <div class="service-item position-relative">
                     <div class="icon"><i class="bi bi-calendar4-week icon"></i></div>
-                    <h4><a href="" class="stretched-link">Magni Dolores</a></h4>
-                    <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
+                    <h4><a href="" class="stretched-link">Plan The Moves</a></h4>
+                    <p>Let's meet up and plan out every move that will lead to your project</p>
                 </div>
             </div><!-- End Service Item -->
 
             <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="400">
                 <div class="service-item position-relative">
                     <div class="icon"><i class="bi bi-broadcast icon"></i></div>
-                    <h4><a href="" class="stretched-link">Nemo Enim</a></h4>
-                    <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
+                    <h4><a href="" class="stretched-link">You Have a Product</a></h4>
+                    <p>With all the details and moves at proper place, you will have a great product to market</p>
                 </div>
             </div><!-- End Service Item -->
 
@@ -66,7 +66,7 @@
     <!-- Section Title -->
     <div class="container section-title" data-aos="fade-up">
         <h2>About Us</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+        <p>We are a team of Product Builders thriving for perfection with no compromise on quality.</p>
     </div><!-- End Section Title -->
 
     <div class="container" data-aos="fade-up">
@@ -80,13 +80,13 @@
             </div>
 
             <div class="col-lg-7">
-                <h3 class="pt-0 pt-lg-5">Neque officiis dolore maiores et exercitationem quae est seda lidera pat claero</h3>
+                <h4 class="pt-0 pt-lg-5">We are a dedicated team of proffessionals with a motive to simplify the product development process so that your focus remains on your business goals.</h4>
 
                 <!-- Tabs -->
                 <ul class="nav nav-pills mb-3">
-                    <li><a class="nav-link active" data-bs-toggle="pill" href="#about-tab1">Saepe fuga</a></li>
-                    <li><a class="nav-link" data-bs-toggle="pill" href="#about-tab2">Voluptates</a></li>
-                    <li><a class="nav-link" data-bs-toggle="pill" href="#about-tab3">Corrupti</a></li>
+                    <li><a class="nav-link active" data-bs-toggle="pill" href="#about-tab1">Listners</a></li>
+                    <li><a class="nav-link" data-bs-toggle="pill" href="#about-tab2">Visionaries</a></li>
+                    <li><a class="nav-link" data-bs-toggle="pill" href="#about-tab3">Creators</a></li>
                 </ul><!-- End Tabs -->
 
                 <!-- Tab Content -->
@@ -94,73 +94,73 @@
 
                     <div class="tab-pane fade show active" id="about-tab1">
 
-                        <p class="fst-italic">Consequuntur inventore voluptates consequatur aut vel et. Eos doloribus expedita. Sapiente atque consequatur minima nihil quae aspernatur quo suscipit voluptatem.</p>
+                        <p class="fst-italic">Foremost of all Product Development process is knowing what you want to achieve.With all ears and focus, we gather all your requirements first hand.</p>
 
                         <div class="d-flex align-items-center mt-4">
                             <i class="bi bi-check2"></i>
-                            <h4>Repudiandae rerum velit modi et officia quasi facilis</h4>
+                            <h4>Requirement's Analysis</h4>
                         </div>
-                        <p>Laborum omnis voluptates voluptas qui sit aliquam blanditiis. Sapiente minima commodi dolorum non eveniet magni quaerat nemo et.</p>
+                        <p>We gather your understandings of your project and process it as per our knowledgebase to get a better outlook of what you really want with the product.</p>
 
                         <div class="d-flex align-items-center mt-4">
                             <i class="bi bi-check2"></i>
-                            <h4>Incidunt non veritatis illum ea ut nisi</h4>
+                            <h4>Product Feasibility</h4>
                         </div>
-                        <p>Non quod totam minus repellendus autem sint velit. Rerum debitis facere soluta tenetur. Iure molestiae assumenda sunt qui inventore eligendi voluptates nisi at. Dolorem quo tempora. Quia et perferendis.</p>
+                        <p>We understand the technolgical limitations and possibilities as per the current market forces and the technological prowess.We suggest you ways and procedures to accompalish the desires.</p>
 
                         <div class="d-flex align-items-center mt-4">
                             <i class="bi bi-check2"></i>
-                            <h4>Omnis ab quia nemo dignissimos rem eum quos..</h4>
+                            <h4>Product Roadmap</h4>
                         </div>
-                        <p>Eius alias aut cupiditate. Dolor voluptates animi ut blanditiis quos nam. Magnam officia aut ut alias quo explicabo ullam esse. Sunt magnam et dolorem eaque magnam odit enim quaerat. Vero error error voluptatem eum.</p>
+                        <p>With all possibilites discussed, we device a roadmap for the prodct development lifecycle. We prepare you for all the needs that the product requires for it's development.</p>
 
                     </div><!-- End Tab 1 Content -->
 
                     <div class="tab-pane fade" id="about-tab2">
 
-                        <p class="fst-italic">Consequuntur inventore voluptates consequatur aut vel et. Eos doloribus expedita. Sapiente atque consequatur minima nihil quae aspernatur quo suscipit voluptatem.</p>
+                        <p class="fst-italic">A product without vision is a waste of time and efforts.We envision the ways in which the product will and should be developed for you.</p>
 
                         <div class="d-flex align-items-center mt-4">
                             <i class="bi bi-check2"></i>
-                            <h4>Repudiandae rerum velit modi et officia quasi facilis</h4>
+                            <h4>Planning</h4>
                         </div>
-                        <p>Laborum omnis voluptates voluptas qui sit aliquam blanditiis. Sapiente minima commodi dolorum non eveniet magni quaerat nemo et.</p>
+                        <p>We Plan each and every move needed to achieve the desired accuracy and quality you strive for.Our technolgical prowess makes it possible to plan the development process for it's entirity.</p>
 
                         <div class="d-flex align-items-center mt-4">
                             <i class="bi bi-check2"></i>
-                            <h4>Incidunt non veritatis illum ea ut nisi</h4>
+                            <h4>Resource Allocation</h4>
                         </div>
-                        <p>Non quod totam minus repellendus autem sint velit. Rerum debitis facere soluta tenetur. Iure molestiae assumenda sunt qui inventore eligendi voluptates nisi at. Dolorem quo tempora. Quia et perferendis.</p>
+                        <p>We optimize our and your's resource utilizations while keeping in mind the quality and timeliness not to be compromised at any cost.We value our and your resources to be utilized to it's best and optimum.</p>
 
                         <div class="d-flex align-items-center mt-4">
                             <i class="bi bi-check2"></i>
-                            <h4>Omnis ab quia nemo dignissimos rem eum quos..</h4>
+                            <h4>Preparations</h4>
                         </div>
-                        <p>Eius alias aut cupiditate. Dolor voluptates animi ut blanditiis quos nam. Magnam officia aut ut alias quo explicabo ullam esse. Sunt magnam et dolorem eaque magnam odit enim quaerat. Vero error error voluptatem eum.</p>
+                        <p>We prepare our resources,in a way that we meet our planning. We pick the best out of the best to solve your queries.</p>
 
                     </div><!-- End Tab 2 Content -->
 
                     <div class="tab-pane fade" id="about-tab3">
 
-                        <p class="fst-italic">Consequuntur inventore voluptates consequatur aut vel et. Eos doloribus expedita. Sapiente atque consequatur minima nihil quae aspernatur quo suscipit voluptatem.</p>
+                        <p class="fst-italic">We value your resources and time.With a motive to reduce redundancies and iterations we create a product for you out of your thoughts and gazes.</p>
 
                         <div class="d-flex align-items-center mt-4">
                             <i class="bi bi-check2"></i>
-                            <h4>Repudiandae rerum velit modi et officia quasi facilis</h4>
+                            <h4>Strict with our timelines</h4>
                         </div>
-                        <p>Laborum omnis voluptates voluptas qui sit aliquam blanditiis. Sapiente minima commodi dolorum non eveniet magni quaerat nemo et.</p>
+                        <p>The product if delivered late might loose it's credibility and market values, or may become obsolete with many players gathering around the same thought.We keep it in mind.</p>
 
                         <div class="d-flex align-items-center mt-4">
                             <i class="bi bi-check2"></i>
-                            <h4>Incidunt non veritatis illum ea ut nisi</h4>
+                            <h4>Requirements to be met</h4>
                         </div>
-                        <p>Non quod totam minus repellendus autem sint velit. Rerum debitis facere soluta tenetur. Iure molestiae assumenda sunt qui inventore eligendi voluptates nisi at. Dolorem quo tempora. Quia et perferendis.</p>
+                        <p>We always strive to meed each and every requirements discussed and do suggest minor improvements if needed. We are humans though but with higher efficiencies.</p>
 
                         <div class="d-flex align-items-center mt-4">
                             <i class="bi bi-check2"></i>
-                            <h4>Omnis ab quia nemo dignissimos rem eum quos..</h4>
+                            <h4>After delivery service</h4>
                         </div>
-                        <p>Eius alias aut cupiditate. Dolor voluptates animi ut blanditiis quos nam. Magnam officia aut ut alias quo explicabo ullam esse. Sunt magnam et dolorem eaque magnam odit enim quaerat. Vero error error voluptatem eum.</p>
+                        <p>Our commitments leaves less scope for after delivery but still we are present on any thick and thins the product faces.We are always available for you.</p>
 
                     </div><!-- End Tab 3 Content -->
 
@@ -174,225 +174,13 @@
 
 </section><!-- /About Section -->
 
-
-<!-- Features Section -->
-<section id="features" class="features section">
-
-    <div class="container" data-aos="fade-up">
-
-        <ul class="nav nav-tabs row gy-4 d-flex">
-
-            <li class="nav-item col-6 col-md-4 col-lg-2">
-                <a class="nav-link active show" data-bs-toggle="tab" data-bs-target="#features-tab-1">
-                    <i class="bi bi-binoculars" style="color: #0dcaf0;"></i>
-                    <h4>Modinest</h4>
-                </a>
-            </li><!-- End Tab 1 Nav -->
-
-            <li class="nav-item col-6 col-md-4 col-lg-2">
-                <a class="nav-link" data-bs-toggle="tab" data-bs-target="#features-tab-2">
-                    <i class="bi bi-box-seam" style="color: #6610f2;"></i>
-                    <h4>Undaesenti</h4>
-                </a>
-            </li><!-- End Tab 2 Nav -->
-
-            <li class="nav-item col-6 col-md-4 col-lg-2">
-                <a class="nav-link" data-bs-toggle="tab" data-bs-target="#features-tab-3">
-                    <i class="bi bi-brightness-high" style="color: #20c997;"></i>
-                    <h4>Pariatur</h4>
-                </a>
-            </li><!-- End Tab 3 Nav -->
-
-            <li class="nav-item col-6 col-md-4 col-lg-2">
-                <a class="nav-link" data-bs-toggle="tab" data-bs-target="#features-tab-4">
-                    <i class="bi bi-command" style="color: #df1529;"></i>
-                    <h4>Nostrum</h4>
-                </a>
-            </li><!-- End Tab 4 Nav -->
-
-            <li class="nav-item col-6 col-md-4 col-lg-2">
-                <a class="nav-link" data-bs-toggle="tab" data-bs-target="#features-tab-5">
-                    <i class="bi bi-easel" style="color: #0d6efd;"></i>
-                    <h4>Adipiscing</h4>
-                </a>
-            </li><!-- End Tab 5 Nav -->
-
-            <li class="nav-item col-6 col-md-4 col-lg-2">
-                <a class="nav-link" data-bs-toggle="tab" data-bs-target="#features-tab-6">
-                    <i class="bi bi-map" style="color: #fd7e14;"></i>
-                    <h4>Reprehit</h4>
-                </a>
-            </li><!-- End Tab 6 Nav -->
-
-        </ul>
-
-        <div class="tab-content">
-
-            <div class="tab-pane fade active show" id="features-tab-1">
-                <div class="row gy-4">
-                    <div class="col-lg-8 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="100">
-                        <h3>Modinest</h3>
-                        <p class="fst-italic">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                            magna aliqua.
-                        </p>
-                        <ul>
-                            <li><i class="bi bi-check-circle-fill"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-                            <li><i class="bi bi-check-circle-fill"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-                            <li><i class="bi bi-check-circle-fill"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
-                        </ul>
-                        <p>
-                            Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                            velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                            culpa qui officia deserunt mollit anim id est laborum
-                        </p>
-                    </div>
-                    <div class="col-lg-4 order-1 order-lg-2 text-center" data-aos="fade-up" data-aos-delay="200">
-                        <img src="{{asset('theme')}}/img/features-1.svg" alt="" class="img-fluid">
-                    </div>
-                </div>
-            </div><!-- End Tab Content 1 -->
-
-            <div class="tab-pane fade" id="features-tab-2">
-                <div class="row gy-4">
-                    <div class="col-lg-8 order-2 order-lg-1">
-                        <h3>Undaesenti</h3>
-                        <p>
-                            Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                            velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                            culpa qui officia deserunt mollit anim id est laborum
-                        </p>
-                        <p class="fst-italic">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                            magna aliqua.
-                        </p>
-                        <ul>
-                            <li><i class="bi bi-check-circle-fill"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-                            <li><i class="bi bi-check-circle-fill"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-                            <li><i class="bi bi-check-circle-fill"></i> Provident mollitia neque rerum asperiores dolores quos qui a. Ipsum neque dolor voluptate nisi sed.</li>
-                            <li><i class="bi bi-check-circle-fill"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
-                        </ul>
-                    </div>
-                    <div class="col-lg-4 order-1 order-lg-2 text-center">
-                        <img src="{{asset('theme')}}/img/features-2.svg" alt="" class="img-fluid">
-                    </div>
-                </div>
-            </div><!-- End Tab Content 2 -->
-
-            <div class="tab-pane fade" id="features-tab-3">
-                <div class="row gy-4">
-                    <div class="col-lg-8 order-2 order-lg-1">
-                        <h3>Pariatur</h3>
-                        <p>
-                            Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                            velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                            culpa qui officia deserunt mollit anim id est laborum
-                        </p>
-                        <ul>
-                            <li><i class="bi bi-check-circle-fill"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-                            <li><i class="bi bi-check-circle-fill"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-                            <li><i class="bi bi-check-circle-fill"></i> Provident mollitia neque rerum asperiores dolores quos qui a. Ipsum neque dolor voluptate nisi sed.</li>
-                        </ul>
-                        <p class="fst-italic">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                            magna aliqua.
-                        </p>
-                    </div>
-                    <div class="col-lg-4 order-1 order-lg-2 text-center">
-                        <img src="{{asset('theme')}}/img/features-3.svg" alt="" class="img-fluid">
-                    </div>
-                </div>
-            </div><!-- End Tab Content 3 -->
-
-            <div class="tab-pane fade" id="features-tab-4">
-                <div class="row gy-4">
-                    <div class="col-lg-8 order-2 order-lg-1">
-                        <h3>Nostrum</h3>
-                        <p>
-                            Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                            velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                            culpa qui officia deserunt mollit anim id est laborum
-                        </p>
-                        <p class="fst-italic">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                            magna aliqua.
-                        </p>
-                        <ul>
-                            <li><i class="bi bi-check-circle-fill"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-                            <li><i class="bi bi-check-circle-fill"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-                            <li><i class="bi bi-check-circle-fill"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
-                        </ul>
-                    </div>
-                    <div class="col-lg-4 order-1 order-lg-2 text-center">
-                        <img src="{{asset('theme')}}/img/features-4.svg" alt="" class="img-fluid">
-                    </div>
-                </div>
-            </div><!-- End Tab Content 4 -->
-
-            <div class="tab-pane fade" id="features-tab-5">
-                <div class="row gy-4">
-                    <div class="col-lg-8 order-2 order-lg-1">
-                        <h3>Adipiscing</h3>
-                        <p>
-                            Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                            velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                            culpa qui officia deserunt mollit anim id est laborum
-                        </p>
-                        <p class="fst-italic">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                            magna aliqua.
-                        </p>
-                        <ul>
-                            <li><i class="bi bi-check-circle-fill"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-                            <li><i class="bi bi-check-circle-fill"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-                            <li><i class="bi bi-check-circle-fill"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
-                        </ul>
-                    </div>
-                    <div class="col-lg-4 order-1 order-lg-2 text-center">
-                        <img src="{{asset('theme')}}/img/features-5.svg" alt="" class="img-fluid">
-                    </div>
-                </div>
-            </div><!-- End Tab Content 5 -->
-
-            <div class="tab-pane fade" id="features-tab-6">
-                <div class="row gy-4">
-                    <div class="col-lg-8 order-2 order-lg-1">
-                        <h3>Reprehit</h3>
-                        <p>
-                            Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                            velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                            culpa qui officia deserunt mollit anim id est laborum
-                        </p>
-                        <p class="fst-italic">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                            magna aliqua.
-                        </p>
-                        <ul>
-                            <li><i class="bi bi-check-circle-fill"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-                            <li><i class="bi bi-check-circle-fill"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-                            <li><i class="bi bi-check-circle-fill"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
-                        </ul>
-                    </div>
-                    <div class="col-lg-4 order-1 order-lg-2 text-center">
-                        <img src="{{asset('theme')}}/img/features-6.svg" alt="" class="img-fluid">
-                    </div>
-                </div>
-            </div><!-- End Tab Content 6 -->
-
-        </div>
-
-    </div>
-
-</section>
-<!-- /Features Section -->
-
 <!-- Services Section -->
 <section id="services" class="services section">
 
     <!-- Section Title -->
     <div class="container section-title" data-aos="fade-up">
         <h2>Our Services</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+        <p>Sky is the limit for possibilities. Still here is few of what we do.</p>
     </div><!-- End Section Title -->
 
     <div class="container" data-aos="fade-up" data-aos-delay="100">
@@ -409,9 +197,9 @@
                             <i class="bi bi-activity"></i>
                         </div>
                         <a href="service-details.html" class="stretched-link">
-                            <h3>Nesciunt Mete</h3>
+                            <h3>Web Development</h3>
                         </a>
-                        <p>Provident nihil minus qui consequatur non omnis maiores. Eos accusantium minus dolores iure perferendis.</p>
+                        <p>We create awesome web based products of any kind over web, be it CRM, ERP etc.</p>
                     </div>
                 </div>
             </div><!-- End Service Item -->
@@ -423,12 +211,12 @@
                     </div>
                     <div class="details position-relative">
                         <div class="icon">
-                            <i class="bi bi-broadcast"></i>
+                            <i class="bi bi-phone"></i>
                         </div>
                         <a href="service-details.html" class="stretched-link">
-                            <h3>Eosle Commodi</h3>
+                            <h3>Mobile Applications</h3>
                         </a>
-                        <p>Ut autem aut autem non a. Sint sint sit facilis nam iusto sint. Libero corrupti neque eum hic non ut nesciunt dolorem.</p>
+                        <p>We develop mobile applications both hybrid as well as native.Accessible for Android as well as IOS devices</p>
                     </div>
                 </div>
             </div><!-- End Service Item -->
@@ -443,9 +231,9 @@
                             <i class="bi bi-easel"></i>
                         </div>
                         <a href="service-details.html" class="stretched-link">
-                            <h3>Ledo Markt</h3>
+                            <h3>Digital Marketing</h3>
                         </a>
-                        <p>Ut excepturi voluptatem nisi sed. Quidem fuga consequatur. Minus ea aut. Vel qui id voluptas adipisci eos earum corrupti.</p>
+                        <p>We provide digital marketing services such as SEO,SMO,Video based, Platform based etc.</p>
                     </div>
                 </div>
             </div><!-- End Service Item -->
@@ -462,7 +250,7 @@
     <!-- Section Title -->
     <div class="container section-title" data-aos="fade-up">
         <h2>Recent Blog Posts</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+        <p>Take out some time and do read our views on emerging trends and topics.</p>
     </div><!-- End Section Title -->
 
     <div class="container">
@@ -563,7 +351,7 @@
     </div><!-- End Section Title -->
 
     <div class="mb-5">
-        <iframe style="width: 100%; height: 400px;" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" allowfullscreen=""></iframe>
+        <iframe style="width: 100%; height: 400px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d437.7565090369498!2d77.03542545711076!3d28.62820140626723!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d05e272e1f7f9%3A0x377baeb75c5d54c7!2s88A%2C!5e0!3m2!1sen!2sin!4v1738522413731!5m2!1sen!2sin" frameborder="0" allowfullscreen=""></iframe>
     </div><!-- End Google Maps -->
 
     <div class="container" data-aos="fade">
@@ -574,13 +362,13 @@
 
                 <div class="info">
                     <h3>Get in touch</h3>
-                    <p>Et id eius voluptates atque nihil voluptatem enim in tempore minima sit ad mollitia commodi minus.</p>
+                    <p>We are always available for any feedback and queries. Get in touch with us for a fascinating journey</p>
 
                     <div class="info-item d-flex">
                         <i class="bi bi-geo-alt flex-shrink-0"></i>
                         <div>
                             <h4>Location:</h4>
-                            <p>A108 Adam Street, New York, NY 535022</p>
+                            <p>L 88 A Mohan Garden Uttam Nagar New Delhi 110059</p>
                         </div>
                     </div><!-- End Info Item -->
 
@@ -588,7 +376,7 @@
                         <i class="bi bi-envelope flex-shrink-0"></i>
                         <div>
                             <h4>Email:</h4>
-                            <p>info@example.com</p>
+                            <p>kj6560@gmail.com</p>
                         </div>
                     </div><!-- End Info Item -->
 
@@ -596,7 +384,7 @@
                         <i class="bi bi-phone flex-shrink-0"></i>
                         <div>
                             <h4>Call:</h4>
-                            <p>+1 5589 55488 55</p>
+                            <p>+91 9599362404</p>
                         </div>
                     </div><!-- End Info Item -->
 
