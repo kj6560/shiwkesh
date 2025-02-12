@@ -305,7 +305,7 @@
               <i class="bi bi-circle"></i><span>All Enquiries</span>
             </a>
           </li>
-          
+
         </ul>
       </li><!-- End Forms Nav -->
 
@@ -319,37 +319,25 @@
               <i class="bi bi-circle"></i><span>All Blogs</span>
             </a>
           </li>
-          
+
         </ul>
       </li><!-- End Tables Nav -->
 
       <li class="nav-item">
         <a class="nav-link collapsed" data-bs-target="#charts-nav" data-bs-toggle="collapse" href="#">
-          <i class="bi bi-bar-chart"></i><span>Charts</span><i class="bi bi-chevron-down ms-auto"></i>
+          <i class="bi bi-bar-chart"></i><span>Portfolios</span><i class="bi bi-chevron-down ms-auto"></i>
         </a>
         <ul id="charts-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
           <li>
-            <a href="charts-chartjs.html">
-              <i class="bi bi-circle"></i><span>Chart.js</span>
+            <a href="/portfolios">
+              <i class="bi bi-circle"></i><span>All Clients</span>
             </a>
           </li>
-          
+
         </ul>
       </li><!-- End Charts Nav -->
 
-      <li class="nav-item">
-        <a class="nav-link collapsed" data-bs-target="#icons-nav" data-bs-toggle="collapse" href="#">
-          <i class="bi bi-gem"></i><span>Icons</span><i class="bi bi-chevron-down ms-auto"></i>
-        </a>
-        <ul id="icons-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
-          <li>
-            <a href="icons-bootstrap.html">
-              <i class="bi bi-circle"></i><span>Bootstrap Icons</span>
-            </a>
-          </li>
-          
-        </ul>
-      </li><!-- End Icons Nav -->
+
     </ul>
 
   </aside><!-- End Sidebar-->
@@ -365,7 +353,7 @@
     <div class="copyright">
       &copy; Copyright <strong><span>{{env('Company_Full_Name')}}</span></strong>. All Rights Reserved
     </div>
-    
+
   </footer><!-- End Footer -->
 
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
