@@ -1,6 +1,7 @@
 @extends('layouts.frontend')
 @section('content')
 <!-- Contact Section -->
+<!-- Contact Section -->
 <section id="contact" class="contact section">
 
     <!-- Section Title -->
@@ -10,7 +11,7 @@
     </div><!-- End Section Title -->
 
     <div class="mb-5">
-        <iframe style="width: 100%; height: 400px;" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" allowfullscreen=""></iframe>
+        <iframe style="width: 100%; height: 400px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d437.7565090369498!2d77.03542545711076!3d28.62820140626723!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d05e272e1f7f9%3A0x377baeb75c5d54c7!2s88A%2C!5e0!3m2!1sen!2sin!4v1738522413731!5m2!1sen!2sin" frameborder="0" allowfullscreen=""></iframe>
     </div><!-- End Google Maps -->
 
     <div class="container" data-aos="fade">
@@ -21,13 +22,13 @@
 
                 <div class="info">
                     <h3>Get in touch</h3>
-                    <p>Et id eius voluptates atque nihil voluptatem enim in tempore minima sit ad mollitia commodi minus.</p>
+                    <p>We are always available for any feedback and queries. Get in touch with us for a fascinating journey</p>
 
                     <div class="info-item d-flex">
                         <i class="bi bi-geo-alt flex-shrink-0"></i>
                         <div>
                             <h4>Location:</h4>
-                            <p>A108 Adam Street, New York, NY 535022</p>
+                            <p>{{$settings['Company_Address']??""}}</p>
                         </div>
                     </div><!-- End Info Item -->
 
@@ -35,7 +36,7 @@
                         <i class="bi bi-envelope flex-shrink-0"></i>
                         <div>
                             <h4>Email:</h4>
-                            <p>info@example.com</p>
+                            <p>{{$settings['Company_Email']??""}}</p>
                         </div>
                     </div><!-- End Info Item -->
 
@@ -43,7 +44,7 @@
                         <i class="bi bi-phone flex-shrink-0"></i>
                         <div>
                             <h4>Call:</h4>
-                            <p>+1 5589 55488 55</p>
+                            <p>{{$settings['Company_Mobile']??""}}</p>
                         </div>
                     </div><!-- End Info Item -->
 

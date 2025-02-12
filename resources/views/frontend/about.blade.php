@@ -1,12 +1,13 @@
 @extends('layouts.frontend')
 @section('content')
 <!-- About Section -->
+<!-- About Section -->
 <section id="about" class="about section">
 
     <!-- Section Title -->
     <div class="container section-title" data-aos="fade-up">
         <h2>About Us</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+        <p>We are a team of Product Builders thriving for perfection with no compromise on quality.</p>
     </div><!-- End Section Title -->
 
     <div class="container" data-aos="fade-up">
@@ -20,13 +21,13 @@
             </div>
 
             <div class="col-lg-7">
-                <h3 class="pt-0 pt-lg-5">Neque officiis dolore maiores et exercitationem quae est seda lidera pat claero</h3>
+                <h4 class="pt-0 pt-lg-5">We are a dedicated team of proffessionals with a motive to simplify the product development process so that your focus remains on your business goals.</h4>
 
                 <!-- Tabs -->
                 <ul class="nav nav-pills mb-3">
-                    <li><a class="nav-link active" data-bs-toggle="pill" href="#about-tab1">Saepe fuga</a></li>
-                    <li><a class="nav-link" data-bs-toggle="pill" href="#about-tab2">Voluptates</a></li>
-                    <li><a class="nav-link" data-bs-toggle="pill" href="#about-tab3">Corrupti</a></li>
+                    <li><a class="nav-link active" data-bs-toggle="pill" href="#about-tab1">Listners</a></li>
+                    <li><a class="nav-link" data-bs-toggle="pill" href="#about-tab2">Visionaries</a></li>
+                    <li><a class="nav-link" data-bs-toggle="pill" href="#about-tab3">Creators</a></li>
                 </ul><!-- End Tabs -->
 
                 <!-- Tab Content -->
@@ -34,73 +35,73 @@
 
                     <div class="tab-pane fade show active" id="about-tab1">
 
-                        <p class="fst-italic">Consequuntur inventore voluptates consequatur aut vel et. Eos doloribus expedita. Sapiente atque consequatur minima nihil quae aspernatur quo suscipit voluptatem.</p>
+                        <p class="fst-italic">Foremost of all Product Development process is knowing what you want to achieve.With all ears and focus, we gather all your requirements first hand.</p>
 
                         <div class="d-flex align-items-center mt-4">
                             <i class="bi bi-check2"></i>
-                            <h4>Repudiandae rerum velit modi et officia quasi facilis</h4>
+                            <h4>Requirement's Analysis</h4>
                         </div>
-                        <p>Laborum omnis voluptates voluptas qui sit aliquam blanditiis. Sapiente minima commodi dolorum non eveniet magni quaerat nemo et.</p>
+                        <p>We gather your understandings of your project and process it as per our knowledgebase to get a better outlook of what you really want with the product.</p>
 
                         <div class="d-flex align-items-center mt-4">
                             <i class="bi bi-check2"></i>
-                            <h4>Incidunt non veritatis illum ea ut nisi</h4>
+                            <h4>Product Feasibility</h4>
                         </div>
-                        <p>Non quod totam minus repellendus autem sint velit. Rerum debitis facere soluta tenetur. Iure molestiae assumenda sunt qui inventore eligendi voluptates nisi at. Dolorem quo tempora. Quia et perferendis.</p>
+                        <p>We understand the technolgical limitations and possibilities as per the current market forces and the technological prowess.We suggest you ways and procedures to accompalish the desires.</p>
 
                         <div class="d-flex align-items-center mt-4">
                             <i class="bi bi-check2"></i>
-                            <h4>Omnis ab quia nemo dignissimos rem eum quos..</h4>
+                            <h4>Product Roadmap</h4>
                         </div>
-                        <p>Eius alias aut cupiditate. Dolor voluptates animi ut blanditiis quos nam. Magnam officia aut ut alias quo explicabo ullam esse. Sunt magnam et dolorem eaque magnam odit enim quaerat. Vero error error voluptatem eum.</p>
+                        <p>With all possibilites discussed, we device a roadmap for the prodct development lifecycle. We prepare you for all the needs that the product requires for it's development.</p>
 
                     </div><!-- End Tab 1 Content -->
 
                     <div class="tab-pane fade" id="about-tab2">
 
-                        <p class="fst-italic">Consequuntur inventore voluptates consequatur aut vel et. Eos doloribus expedita. Sapiente atque consequatur minima nihil quae aspernatur quo suscipit voluptatem.</p>
+                        <p class="fst-italic">A product without vision is a waste of time and efforts.We envision the ways in which the product will and should be developed for you.</p>
 
                         <div class="d-flex align-items-center mt-4">
                             <i class="bi bi-check2"></i>
-                            <h4>Repudiandae rerum velit modi et officia quasi facilis</h4>
+                            <h4>Planning</h4>
                         </div>
-                        <p>Laborum omnis voluptates voluptas qui sit aliquam blanditiis. Sapiente minima commodi dolorum non eveniet magni quaerat nemo et.</p>
+                        <p>We Plan each and every move needed to achieve the desired accuracy and quality you strive for.Our technolgical prowess makes it possible to plan the development process for it's entirity.</p>
 
                         <div class="d-flex align-items-center mt-4">
                             <i class="bi bi-check2"></i>
-                            <h4>Incidunt non veritatis illum ea ut nisi</h4>
+                            <h4>Resource Allocation</h4>
                         </div>
-                        <p>Non quod totam minus repellendus autem sint velit. Rerum debitis facere soluta tenetur. Iure molestiae assumenda sunt qui inventore eligendi voluptates nisi at. Dolorem quo tempora. Quia et perferendis.</p>
+                        <p>We optimize our and your's resource utilizations while keeping in mind the quality and timeliness not to be compromised at any cost.We value our and your resources to be utilized to it's best and optimum.</p>
 
                         <div class="d-flex align-items-center mt-4">
                             <i class="bi bi-check2"></i>
-                            <h4>Omnis ab quia nemo dignissimos rem eum quos..</h4>
+                            <h4>Preparations</h4>
                         </div>
-                        <p>Eius alias aut cupiditate. Dolor voluptates animi ut blanditiis quos nam. Magnam officia aut ut alias quo explicabo ullam esse. Sunt magnam et dolorem eaque magnam odit enim quaerat. Vero error error voluptatem eum.</p>
+                        <p>We prepare our resources,in a way that we meet our planning. We pick the best out of the best to solve your queries.</p>
 
                     </div><!-- End Tab 2 Content -->
 
                     <div class="tab-pane fade" id="about-tab3">
 
-                        <p class="fst-italic">Consequuntur inventore voluptates consequatur aut vel et. Eos doloribus expedita. Sapiente atque consequatur minima nihil quae aspernatur quo suscipit voluptatem.</p>
+                        <p class="fst-italic">We value your resources and time.With a motive to reduce redundancies and iterations we create a product for you out of your thoughts and gazes.</p>
 
                         <div class="d-flex align-items-center mt-4">
                             <i class="bi bi-check2"></i>
-                            <h4>Repudiandae rerum velit modi et officia quasi facilis</h4>
+                            <h4>Strict with our timelines</h4>
                         </div>
-                        <p>Laborum omnis voluptates voluptas qui sit aliquam blanditiis. Sapiente minima commodi dolorum non eveniet magni quaerat nemo et.</p>
+                        <p>The product if delivered late might loose it's credibility and market values, or may become obsolete with many players gathering around the same thought.We keep it in mind.</p>
 
                         <div class="d-flex align-items-center mt-4">
                             <i class="bi bi-check2"></i>
-                            <h4>Incidunt non veritatis illum ea ut nisi</h4>
+                            <h4>Requirements to be met</h4>
                         </div>
-                        <p>Non quod totam minus repellendus autem sint velit. Rerum debitis facere soluta tenetur. Iure molestiae assumenda sunt qui inventore eligendi voluptates nisi at. Dolorem quo tempora. Quia et perferendis.</p>
+                        <p>We always strive to meed each and every requirements discussed and do suggest minor improvements if needed. We are humans though but with higher efficiencies.</p>
 
                         <div class="d-flex align-items-center mt-4">
                             <i class="bi bi-check2"></i>
-                            <h4>Omnis ab quia nemo dignissimos rem eum quos..</h4>
+                            <h4>After delivery service</h4>
                         </div>
-                        <p>Eius alias aut cupiditate. Dolor voluptates animi ut blanditiis quos nam. Magnam officia aut ut alias quo explicabo ullam esse. Sunt magnam et dolorem eaque magnam odit enim quaerat. Vero error error voluptatem eum.</p>
+                        <p>Our commitments leaves less scope for after delivery but still we are present on any thick and thins the product faces.We are always available for you.</p>
 
                     </div><!-- End Tab 3 Content -->
 
