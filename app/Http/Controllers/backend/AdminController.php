@@ -108,4 +108,12 @@ class AdminController extends Controller
         return view('backend.enquiries.view', ['enquiry' => $query]);
     
     }
+    public function deleteEnquiry(Request $request, $id){
+        $query = Query::find($id);
+        if ($query->delete()) {
+            return redirect()->back()->with('success', 'Enquiry deleted successfully');
+        } else {
+            return redirect()->back()->with('error', 'Something went wrong');
+        }
+    }
 }

@@ -29,5 +29,6 @@ Route::middleware(['auth:web'])->group(function () {
 
     Route::get('/enquiries', [AdminController::class, 'enquiries'])->name('enquiries');
     Route::get('/viewEnquiry/{id}',[AdminController::class,'viewEnquiry'])->name('viewEnquiry');
+    Route::get('/deleteEnquiry/{id}', [AdminController::class, 'deleteEnquiry'])->name('deleteEnquiry');
     
 });
