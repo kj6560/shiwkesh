@@ -368,7 +368,7 @@
                         <i class="bi bi-geo-alt flex-shrink-0"></i>
                         <div>
                             <h4>Location:</h4>
-                            <p>L 88 A Mohan Garden Uttam Nagar New Delhi 110059</p>
+                            <p>{{$settings['Company_Address']??""}}</p>
                         </div>
                     </div><!-- End Info Item -->
 
@@ -376,7 +376,7 @@
                         <i class="bi bi-envelope flex-shrink-0"></i>
                         <div>
                             <h4>Email:</h4>
-                            <p>kj6560@gmail.com</p>
+                            <p>{{$settings['Company_Email']??""}}</p>
                         </div>
                     </div><!-- End Info Item -->
 
@@ -384,7 +384,7 @@
                         <i class="bi bi-phone flex-shrink-0"></i>
                         <div>
                             <h4>Call:</h4>
-                            <p>+91 9599362404</p>
+                            <p>{{$settings['Company_Mobile']??""}}</p>
                         </div>
                     </div><!-- End Info Item -->
 
