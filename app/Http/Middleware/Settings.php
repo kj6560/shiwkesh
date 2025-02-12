@@ -16,7 +16,7 @@ class Settings
      */
     public function handle(Request $request, Closure $next): Response
     {
-        $allSettings = WebsiteSetting::all();
+        $allSettings = WebsiteSetting::where('is_active',1)->get();
         $settings = [];
         foreach ($allSettings as $setting) {
             $settings[$setting->settings_name] = $setting->settings_value;
