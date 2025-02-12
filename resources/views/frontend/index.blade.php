@@ -347,7 +347,7 @@
     <!-- Section Title -->
     <div class="container section-title" data-aos="fade-up">
         <h2>Contact</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+        <p>We are easily reachable anytime. Just fill out the below form and we will get back to you as soon as possible.</p>
     </div><!-- End Section Title -->
 
     <div class="mb-5">
@@ -393,7 +393,8 @@
             </div>
 
             <div class="col-lg-8">
-                <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+                <form action="/storeQueries" method="post" role="form" class="php-email-form">
+                    @csrf
                     <div class="row">
                         <div class="col-md-6 form-group">
                             <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required="">

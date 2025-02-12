@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\backend;
 
 use App\Http\Controllers\Controller;
+use App\Models\Query;
 use App\Models\User;
 use App\Models\WebsiteSetting;
 use Illuminate\Http\Request;
@@ -96,5 +97,15 @@ class AdminController extends Controller
         } else {
             return redirect()->back()->with('error', 'Something went wrong');
         }
+    }
+    public function enquiries(Request $request)
+    {
+        $queries = Query::all();
+        return view('backend.enquiries.index', ['queries' => $queries]);
+    }
+    public function viewEnquiry(Request $request, $id){
+        $query = Query::find($id)->first();
+        return view('backend.enquiries.view', ['enquiry' => $query]);
+    
     }
 }

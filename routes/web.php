@@ -18,6 +18,7 @@ Route::get('/logout', [AdminController::class, 'logout'])->name('logout');
 Route::get('/register', [AdminController::class, 'register'])->name('register');
 Route::post('/authenticate', [AdminController::class, 'authenticate'])->name('authenticate');
 Route::post('/storeUser', [AdminController::class, 'storeUser'])->name('storeUser');
+Route::post('/storeQueries',[SiteController::class,'storeQueries'])->name('storeQueries');
 
 Route::middleware(['auth:web'])->group(function () {
     Route::get('/dashboard', [AdminController::class, 'index'])->name('dashboard');
@@ -25,4 +26,8 @@ Route::middleware(['auth:web'])->group(function () {
     Route::get('/editGeneralSettings/{id}', [AdminController::class, 'editGeneralSettings'])->name('editGeneralSettings');
     Route::post('/storeGeneralSettings', [AdminController::class, 'storeGeneralSettings'])->name('storeGeneralSettings');
     Route::get('/deleteGeneralSettings/{id}', [AdminController::class, 'deleteGeneralSettings'])->name('deleteGeneralSettings');
+
+    Route::get('/enquiries', [AdminController::class, 'enquiries'])->name('enquiries');
+    Route::get('/viewEnquiry/{id}',[AdminController::class,'viewEnquiry'])->name('viewEnquiry');
+    
 });
