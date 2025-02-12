@@ -7,9 +7,9 @@ use Illuminate\Http\Request;
 
 class SiteController extends Controller
 {
-    public function index()
+    public function index(Request $request)
     {
-        return view('frontend.index');
+        return view('frontend.index',['settings'=>$request->settings]);
     }
     public function about(Request $request){
         return view('frontend.about');

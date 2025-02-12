@@ -4,6 +4,7 @@ namespace App\Http\Controllers\backend;
 
 use App\Http\Controllers\Controller;
 use App\Models\User;
+use App\Models\WebsiteSetting;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
@@ -58,6 +59,42 @@ class AdminController extends Controller
     }
     public function generalSettings()
     {
-        return view('backend.settings.generalSettings');
+        $settings = WebsiteSetting::all();
+        return view('backend.settings.generalSettings', ['settings' => $settings]);
+    }
+    public function editGeneralSettings(Request $request, $id)
+    {
+        $settings = WebsiteSetting::all();
+        $setting = WebsiteSetting::find($id);
+        return view('backend.settings.generalSettings', ['settings' => $settings, 'setting' => $setting]);
+    }
+    public function deleteGeneralSettings(Request $request, $id)
+    {
+        $setting = WebsiteSetting::find($id);
+        if ($setting->delete()) {
+            return redirect()->back()->with('success', 'Settings deleted successfully');
+        } else {
+            return redirect()->back()->with('error', 'Something went wrong');
+        }
+    }
+    public function storeGeneralSettings(Request $request)
+    {
+        $request->validate(
+            [
+                'settings_name' => 'required',
+                'settings_value' => 'required',
+                'is_active' => 'required'
+            ]
+        );
+        $data = $request->all();
+        $website_settings = new WebsiteSetting();
+        $website_settings->settings_name = $data['settings_name'];
+        $website_settings->settings_value = $data['settings_value'];
+        $website_settings->is_active = $data['is_active'];
+        if ($website_settings->save()) {
+            return redirect()->back()->with('success', 'Settings saved successfully');
+        } else {
+            return redirect()->back()->with('error', 'Something went wrong');
+        }
     }
 }
