@@ -329,7 +329,7 @@
         </a>
         <ul id="charts-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
           <li>
-            <a href="/portfolios">
+            <a href="/portfolioSettings">
               <i class="bi bi-circle"></i><span>All Clients</span>
             </a>
           </li>

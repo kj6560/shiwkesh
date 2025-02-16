@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\backend\AdminController;
 use App\Http\Controllers\backend\BlogController;
+use App\Http\Controllers\backend\PortfolioSettingsController;
 use App\Http\Controllers\frontend\SiteController;
 use App\Http\Middleware\Settings;
 use Illuminate\Support\Facades\Route;
@@ -32,6 +33,7 @@ Route::middleware(['auth:web'])->group(function () {
     Route::get('/viewEnquiry/{id}',[AdminController::class,'viewEnquiry'])->name('viewEnquiry');
     Route::get('/deleteEnquiry/{id}', [AdminController::class, 'deleteEnquiry'])->name('deleteEnquiry');
     
+    //blog settings
     Route::get('/blogSettings', [BlogController::class, 'index'])->name('blogSettings');
     Route::get('/blogSettings/blogs/create', [BlogController::class, 'createBlog'])->name('admin.blogSettings.createBlog');
     Route::get('/blogSettings/blogs/edit/{id}', [BlogController::class, 'editBlog'])->name('admin.blogSettings.editBlog');
@@ -51,4 +53,8 @@ Route::middleware(['auth:web'])->group(function () {
     Route::get('/blogSettings/tags/edit/{id}', [BlogController::class, 'editTag'])->name('admin.blogSettings.editTag');
     Route::get('/blogSettings/tags/delete/{id}', [BlogController::class, 'deleteTag'])->name('admin.blogSettings.deleteTag');
     Route::post('/blogSettings/tags/store', [BlogController::class, 'storeTag'])->name('admin.blogSettings.storeTag');
+
+    //portfolio settings
+    Route::get('/portfolioSettings', [PortfolioSettingsController::class, 'index'])->name('portfolioSettings');
+    Route::get('/portfolioSettings/create', [PortfolioSettingsController::class, 'create'])->name('portfolioSettings.create');
 });
