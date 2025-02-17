@@ -23,13 +23,16 @@
           </thead>
           <tbody>
             @foreach ($portfolios as $portfolio)
-                <tr>
-                    <td>{{ $portfolio->id }}</td>
-                    <td>{{ $portfolio->client_name }}</td>
-                    <td>{{ $portfolio->work_type }}</td>
-                    <td>{{ $portfolio->is_active ==1 ? "YES":"No" }}</td>
-                    <td></td>
-                </tr>
+            <tr>
+              <td>{{ $portfolio->id }}</td>
+              <td>{{ $portfolio->client_name }}</td>
+              <td>{{ $portfolio->work_type }}</td>
+              <td>{{ $portfolio->is_active ==1 ? "YES":"No" }}</td>
+              <td>
+                <a href="/portfolioSettings/edit/{{ $portfolio->id }}" class="btn btn-primary btn-sm">Edit</a>
+                <a href="/portfolioSettings/delete/{{ $portfolio->id }}" class="btn btn-danger btn-sm">Delete</a>
+              </td>
+            </tr>
             @endforeach
           </tbody>
         </table>

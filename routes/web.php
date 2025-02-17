@@ -57,4 +57,7 @@ Route::middleware(['auth:web'])->group(function () {
     //portfolio settings
     Route::get('/portfolioSettings', [PortfolioSettingsController::class, 'index'])->name('portfolioSettings');
     Route::get('/portfolioSettings/create', [PortfolioSettingsController::class, 'create'])->name('portfolioSettings.create');
+    Route::post('/portfolioSettings/store', [PortfolioSettingsController::class, 'store'])->name('portfolioSettings.store');
+    Route::get('/portfolioSettings/edit/{id}', [PortfolioSettingsController::class, 'edit'])->name('portfolioSettings.edit');
+    Route::get('/portfolioSettings/delete/{id}', [PortfolioSettingsController::class, 'delete'])->name('portfolioSettings.delete');
 });
