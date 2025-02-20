@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\frontend;
 
 use App\Http\Controllers\Controller;
+use App\Models\Downloads;
 use Illuminate\Http\Request;
 use App\Models\Query;
 
@@ -55,5 +56,19 @@ class SiteController extends Controller
         } else {
             return response()->json(['error' => 'Something went wrong.']);
         }
+    }
+    public function downloads(Request $request)
+    {
+        $downloads = Downloads::where('is_available', 1)->get();
+        return view('frontend.downloads', ['settings' => $request->settings,'downloads'=>$downloads]);
+    }
+    public function downloadFile(Request $request)
+    {
+        $fileName = $request->file_name;
+        $filePath = storage_path('app/public/uploads/' . $fileName);
+        if (!file_exists($filePath)) {
+            return response()->json(['error' => 'File not found'], 404);
+        }
+        return response()->download($filePath);
     }
 }

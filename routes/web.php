@@ -20,7 +20,9 @@ Route::get('/logout', [AdminController::class, 'logout'])->name('logout');
 Route::get('/register', [AdminController::class, 'register'])->name('register');
 Route::post('/authenticate', [AdminController::class, 'authenticate'])->name('authenticate');
 Route::post('/storeUser', [AdminController::class, 'storeUser'])->name('storeUser');
-Route::post('/storeQueries',[SiteController::class,'storeQueries'])->name('storeQueries');
+Route::post('/storeQueries', [SiteController::class, 'storeQueries'])->name('storeQueries');
+Route::get("/downloads", [SiteController::class, 'downloads'])->name('downloads');
+Route::get("/downloadFile", [SiteController::class, 'downloadFile'])->name('downloadFile');
 
 Route::middleware(['auth:web'])->group(function () {
     Route::get('/dashboard', [AdminController::class, 'index'])->name('dashboard');
@@ -30,9 +32,9 @@ Route::middleware(['auth:web'])->group(function () {
     Route::get('/deleteGeneralSettings/{id}', [AdminController::class, 'deleteGeneralSettings'])->name('deleteGeneralSettings');
 
     Route::get('/enquiries', [AdminController::class, 'enquiries'])->name('enquiries');
-    Route::get('/viewEnquiry/{id}',[AdminController::class,'viewEnquiry'])->name('viewEnquiry');
+    Route::get('/viewEnquiry/{id}', [AdminController::class, 'viewEnquiry'])->name('viewEnquiry');
     Route::get('/deleteEnquiry/{id}', [AdminController::class, 'deleteEnquiry'])->name('deleteEnquiry');
-    
+
     //blog settings
     Route::get('/blogSettings', [BlogController::class, 'index'])->name('blogSettings');
     Route::get('/blogSettings/blogs/create', [BlogController::class, 'createBlog'])->name('admin.blogSettings.createBlog');

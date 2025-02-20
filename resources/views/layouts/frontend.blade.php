@@ -66,6 +66,7 @@
             </ul>
           </li> -->
           <li><a href="/contactUs">Contact</a></li>
+          <li><a href="/downloads">Downloads</a></li>
           @if (Auth::check())
           <li><a href="/logout">Logout</a></li>
           @else
@@ -81,7 +82,7 @@
   </header>
 
   <main class="main">
-        @yield('content')
+    @yield('content')
 
   </main>
 
@@ -156,7 +157,7 @@
           <div>
             © Copyright <strong><span>{{env('Company_Full_Name')}}</span></strong> All Rights Reserved
           </div>
-          
+
         </div>
 
         <div class="social-links order-first order-lg-last mb-3 mb-lg-0">
