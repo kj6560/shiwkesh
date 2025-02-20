@@ -67,6 +67,7 @@ class SiteController extends Controller
         $fileName = $request->file_name;
         $filePath = storage_path('app/public/uploads/' . $fileName);
         if (!file_exists($filePath)) {
+            echo $filePath;
             return response()->json(['error' => 'File not found'], 404);
         }
         return response()->download($filePath);
