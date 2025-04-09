@@ -4,6 +4,7 @@ namespace App\Http\Controllers\frontend;
 
 use App\Http\Controllers\Controller;
 use App\Models\Downloads;
+use App\Models\Portfolio;
 use Illuminate\Http\Request;
 use App\Models\Query;
 
@@ -31,7 +32,8 @@ class SiteController extends Controller
     }
     public function portfolio(Request $request)
     {
-        return view('frontend.portfolio', ['settings' => $request->settings]);
+        $portfolios = Portfolio::where('is_active', 1)->get();
+        return view('frontend.portfolio', ['settings' => $request->settings,'portfolios'=>$portfolios]);
     }
     public function services(Request $request)
     {
