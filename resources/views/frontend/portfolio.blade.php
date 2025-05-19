@@ -37,7 +37,7 @@
 
         <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-{{ $type }}">
           <div class="portfolio-content h-100">
-            <img src="{{ url($portfolio->work_image) }}" class="img-fluid" alt="">
+            <img src="{{ url('storage') }}/{{ $portfolio->work_image }}" class="img-fluid" alt="">
             <div class="portfolio-info">
               <a href="{{ asset('theme') }}/img/portfolio/app-1.jpg" data-gallery="portfolio-gallery-app" class="glightbox preview-link">
                 <i class="bi bi-zoom-in"></i>
