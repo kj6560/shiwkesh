@@ -31,7 +31,7 @@
       } elseif ($portfolio->work_type == 2) {
       $type = 'app';
       } elseif ($portfolio->work_type == 3) {
-      $type = 'binding';
+      $type = 'branding';
       }
       @endphp
 
