@@ -18,6 +18,7 @@
       <li data-filter=".filter-app">App</li>
       <li data-filter=".filter-product">Website</li>
       <li data-filter=".filter-branding">Backend Utility</li>
+      <li data-filter=".filter-ai">AI Apps</li>
 
       </ul><!-- End Portfolio Filters -->
 
@@ -32,6 +33,8 @@
       $type = 'app';
       } elseif ($portfolio->work_type == 3) {
       $type = 'branding';
+      }elseif($portfolio->work_type == 4) {
+      $type = 'ai';
       }
       @endphp
 

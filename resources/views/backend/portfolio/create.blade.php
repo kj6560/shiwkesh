@@ -28,6 +28,7 @@
                   <option value="1" @if(!empty($portfolio->id) && $portfolio->work_type==1) selected @else "" @endif>Website</option>
                   <option value="2" @if(!empty($portfolio->id) && $portfolio->work_type==2) selected @else "" @endif>Mobile Application</option>
                   <option value="3" @if(!empty($portfolio->id) && $portfolio->work_type==3) selected @else "" @endif>Backend Utility</option>
+                  <option value="4" @if(!empty($portfolio->id) && $portfolio->work_type==4) selected @else "" @endif>Ai Based Utility</option>
                 </select>
               </div>
             </div>
