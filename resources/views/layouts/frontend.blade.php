@@ -36,7 +36,7 @@
       <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
         <!-- Uncomment the line below if you also wish to use an image logo -->
         <!-- <img src="{{asset('theme')}}/img/logo.png" alt=""> -->
-        <h1 class="sitename">{{env('Company_Name')}}</h1>
+        <h1 class="sitename">{{$settings['Company_Name_Short']??""}}</h1>
         <span>.</span>
       </a>
 
