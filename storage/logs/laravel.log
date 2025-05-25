@@ -7534,3 +7534,43 @@
 #59 /var/www/shiwkesh/main_website/public/index.php(17): Illuminate\\Foundation\\Application->handleRequest()
 #60 {main}
 "} 
+[2025-05-25 10:50:59] local.ERROR: There are no commands defined in the "command" namespace. {"exception":"[object] (Symfony\\Component\\Console\\Exception\\NamespaceNotFoundException(code: 0): There are no commands defined in the \"command\" namespace. at /Users/keshav/php_apps/shiwkesh.in/vendor/symfony/console/Application.php:660)
+[stacktrace]
+#0 /Users/keshav/php_apps/shiwkesh.in/vendor/symfony/console/Application.php(709): Symfony\\Component\\Console\\Application->findNamespace('command')
+#1 /Users/keshav/php_apps/shiwkesh.in/vendor/symfony/console/Application.php(284): Symfony\\Component\\Console\\Application->find('command:generat...')
+#2 /Users/keshav/php_apps/shiwkesh.in/vendor/symfony/console/Application.php(193): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#3 /Users/keshav/php_apps/shiwkesh.in/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(198): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#4 /Users/keshav/php_apps/shiwkesh.in/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(1205): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#5 /Users/keshav/php_apps/shiwkesh.in/artisan(13): Illuminate\\Foundation\\Application->handleCommand(Object(Symfony\\Component\\Console\\Input\\ArgvInput))
+#6 {main}
+"} 
+[2025-05-25 10:51:50] local.ERROR: There are no commands defined in the "command" namespace. {"exception":"[object] (Symfony\\Component\\Console\\Exception\\NamespaceNotFoundException(code: 0): There are no commands defined in the \"command\" namespace. at /Users/keshav/php_apps/shiwkesh.in/vendor/symfony/console/Application.php:660)
+[stacktrace]
+#0 /Users/keshav/php_apps/shiwkesh.in/vendor/symfony/console/Application.php(709): Symfony\\Component\\Console\\Application->findNamespace('command')
+#1 /Users/keshav/php_apps/shiwkesh.in/vendor/symfony/console/Application.php(284): Symfony\\Component\\Console\\Application->find('command:generat...')
+#2 /Users/keshav/php_apps/shiwkesh.in/vendor/symfony/console/Application.php(193): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#3 /Users/keshav/php_apps/shiwkesh.in/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(198): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#4 /Users/keshav/php_apps/shiwkesh.in/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(1205): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#5 /Users/keshav/php_apps/shiwkesh.in/artisan(13): Illuminate\\Foundation\\Application->handleCommand(Object(Symfony\\Component\\Console\\Input\\ArgvInput))
+#6 {main}
+"} 
+[2025-05-25 10:52:22] local.ERROR: There are no commands defined in the "command" namespace. {"exception":"[object] (Symfony\\Component\\Console\\Exception\\NamespaceNotFoundException(code: 0): There are no commands defined in the \"command\" namespace. at /Users/keshav/php_apps/shiwkesh.in/vendor/symfony/console/Application.php:660)
+[stacktrace]
+#0 /Users/keshav/php_apps/shiwkesh.in/vendor/symfony/console/Application.php(709): Symfony\\Component\\Console\\Application->findNamespace('command')
+#1 /Users/keshav/php_apps/shiwkesh.in/vendor/symfony/console/Application.php(284): Symfony\\Component\\Console\\Application->find('command:generat...')
+#2 /Users/keshav/php_apps/shiwkesh.in/vendor/symfony/console/Application.php(193): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#3 /Users/keshav/php_apps/shiwkesh.in/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(198): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#4 /Users/keshav/php_apps/shiwkesh.in/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(1205): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#5 /Users/keshav/php_apps/shiwkesh.in/artisan(13): Illuminate\\Foundation\\Application->handleCommand(Object(Symfony\\Component\\Console\\Input\\ArgvInput))
+#6 {main}
+"} 
+[2025-05-25 10:52:29] local.ERROR: There are no commands defined in the "command" namespace. {"exception":"[object] (Symfony\\Component\\Console\\Exception\\NamespaceNotFoundException(code: 0): There are no commands defined in the \"command\" namespace. at /Users/keshav/php_apps/shiwkesh.in/vendor/symfony/console/Application.php:660)
+[stacktrace]
+#0 /Users/keshav/php_apps/shiwkesh.in/vendor/symfony/console/Application.php(709): Symfony\\Component\\Console\\Application->findNamespace('command')
+#1 /Users/keshav/php_apps/shiwkesh.in/vendor/symfony/console/Application.php(284): Symfony\\Component\\Console\\Application->find('command:generat...')
+#2 /Users/keshav/php_apps/shiwkesh.in/vendor/symfony/console/Application.php(193): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#3 /Users/keshav/php_apps/shiwkesh.in/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(198): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#4 /Users/keshav/php_apps/shiwkesh.in/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(1205): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#5 /Users/keshav/php_apps/shiwkesh.in/artisan(13): Illuminate\\Foundation\\Application->handleCommand(Object(Symfony\\Component\\Console\\Input\\ArgvInput))
+#6 {main}
+"} 
