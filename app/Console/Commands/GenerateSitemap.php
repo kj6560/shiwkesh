@@ -3,6 +3,7 @@
 namespace App\Console\Commands;
 
 use App\Models\BlogPost;
+use App\Models\Cron;
 use App\Models\Product;
 use App\Models\ProductCategory;
 use Illuminate\Console\Command;
@@ -80,7 +81,9 @@ class GenerateSitemap extends Command
 
         // Write to public/sitemap.xml
         file_put_contents(public_path('sitemap.xml'), $xml);
-
+        $cron = new Cron();
+        $cron->model = 'sitemap:generate';
+        $cron->save();
         $this->info('✅ Sitemap.xml manually generated with changefreq and priority.');
     }
 }
