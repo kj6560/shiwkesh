@@ -37,6 +37,27 @@ class GenerateSitemap extends Command
         ];
 
         $urls[] = [
+            'loc' => "{$baseUrl}/services",
+            'lastmod' => $now,
+            'changefreq' => 'hourly',
+            'priority' => '1.0',
+        ];
+
+        $urls[] = [
+            'loc' => "{$baseUrl}/portfolio",
+            'lastmod' => $now,
+            'changefreq' => 'hourly',
+            'priority' => '1.0',
+        ];
+
+        $urls[] = [
+            'loc' => "{$baseUrl}/blog",
+            'lastmod' => $now,
+            'changefreq' => 'hourly',
+            'priority' => '1.0',
+        ];
+
+        $urls[] = [
             'loc' => "{$baseUrl}/contactUs",
             'lastmod' => $now,
             'changefreq' => 'hourly',
