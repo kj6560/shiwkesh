@@ -67,6 +67,7 @@
           </li> -->
           <li><a href="/contactUs">Contact</a></li>
           <li><a href="/privacy">privacy</a></li>
+          <li><a href="/terms">terms</a></li>
           <!-- <li><a href="/downloads">Downloads</a></li> -->
           @if (Auth::check())
           <li><a href="/logout">Logout</a></li>

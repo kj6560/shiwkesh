@@ -77,4 +77,7 @@ class SiteController extends Controller
     public function privacy(Request $request){
         return view('frontend.privacy',['settings'=>$request->settings]);
     }
+        public function terms(Request $request){
+        return view('frontend.terms',['settings'=>$request->settings]);
+    }
 }

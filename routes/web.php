@@ -46,6 +46,7 @@ Route::get('/callback', function (Request $request) {
     print_r(json_decode(file_get_contents($envPath), true));
 });
 Route::get('/privacy',[SiteController::class,'privacy'])->middleware([Settings::class])->name('privacy');
+Route::get('/terms',[SiteController::class,'terms'])->middleware([Settings::class])->name('terms');
 Route::get('/', [SiteController::class, 'index'])->middleware([Settings::class])->name('home');
 Route::get('/contactUs', [SiteController::class, 'contactUs'])->middleware([Settings::class])->name('contactUs');
 Route::get('/about', [SiteController::class, 'about'])->middleware([Settings::class])->name('about');
