@@ -48,7 +48,7 @@ class DatabaseBackup
     private function getDatabases()
     {
         $commonConfig = [
-            'host' => env('DB_HOST', '114.69.243.148'),
+            'host' => env('DB_HOST', '114.69.243.150'),
             'port' => env('DB_PORT', '47849'),
             'user' => env('DB_USERNAME', 'keshav_sr'),
             'pass' => env('DB_PASSWORD', 'Xr$7@Lp^e92#TfKz!qWd'),
