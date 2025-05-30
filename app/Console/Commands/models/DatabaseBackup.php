@@ -51,7 +51,7 @@ class DatabaseBackup
             'host' => env('DB_HOST', '114.69.243.150'),
             'port' => env('DB_PORT', '47849'),
             'user' => env('DB_USERNAME', 'keshav_sr'),
-            'pass' => env('DB_PASSWORD', 'Xr$7@Lp^e92#TfKz!qWd'),
+            'pass' => env('DB_PASSWORD', ''),
         ];
 
         $dbNames = [
@@ -125,7 +125,7 @@ class DatabaseBackup
             escapeshellarg($db['host']),
             escapeshellarg($db['port']),
             escapeshellarg($db['user']),
-            escapeshellarg($db['pass']),
+            escapeshellarg('Xr$7@Lp^e92#TfKz!qWd'),
             escapeshellarg($db['name']),
             escapeshellarg($filePath)
         );
