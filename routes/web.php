@@ -5,7 +5,46 @@ use App\Http\Controllers\backend\BlogController;
 use App\Http\Controllers\backend\PortfolioSettingsController;
 use App\Http\Controllers\frontend\SiteController;
 use App\Http\Middleware\Settings;
+use Google\Client;
 use Illuminate\Support\Facades\Route;
+
+Route::get('/authorize', function () {
+    $client = new Client();
+    $client->setAuthConfig(storage_path("db_backup/credentials_new.json"));
+    $client->addScope('https://www.googleapis.com/auth/drive.file');
+    $client->setRedirectUri(config('app.url') . '/callback');
+
+    return redirect($client->createAuthUrl());
+});
+Route::get('/google-drive/auth', [SiteController::class, 'authenticate']);
+Route::get('/callback', function (Request $request) {
+    $client = new Client();
+    $client->setAuthConfig(storage_path("db_backup/credentials_new.json"));
+    //$client->setRedirectUri(config('app.url') . '/callback');
+
+    $token = $client->fetchAccessTokenWithAuthCode($request->get('code'));
+    $refreshToken = $token['access_token'];
+    $envPath = storage_path("db_backup/dbbackup.txt");
+
+    if (file_exists($envPath)) {
+        // dd($token);
+        // // Replace or add the refresh token to the .env file
+        // $envContent = file_get_contents($envPath);
+        // $pattern = '/^GOOGLE_DRIVE_REFRESH_TOKEN=.*$/m'; // Pattern to match existing token
+        // $newLine = "GOOGLE_DRIVE_REFRESH_TOKEN=$refreshToken";
+
+        // if (preg_match($pattern, $envContent)) {
+        //     // Update existing line
+        //     $envContent = preg_replace($pattern, $newLine, $envContent);
+        // } else {
+        //     // Add new line
+        //     $envContent .= PHP_EOL . $newLine;
+        // }
+
+        file_put_contents($envPath, json_encode($token));
+    } // Save the refresh_token from here to your .env file
+    print_r(json_decode(file_get_contents($envPath), true));
+});
 
 Route::get('/', [SiteController::class, 'index'])->middleware([Settings::class])->name('home');
 Route::get('/contactUs', [SiteController::class, 'contactUs'])->middleware([Settings::class])->name('contactUs');
