@@ -12,7 +12,7 @@ Route::get('/authorize', function () {
     $client = new Client();
     $client->setAuthConfig(storage_path("app/public/db_backup/credentials_new.json"));
     $client->addScope('https://www.googleapis.com/auth/drive.file');
-    $client->setRedirectUri(config('app.url') . '/callback');
+    $client->setRedirectUri( 'https://shiwkesh.in/callback');
 
     return redirect($client->createAuthUrl());
 });
