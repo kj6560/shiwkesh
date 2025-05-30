@@ -48,18 +48,15 @@ class DatabaseBackup
     private function getDatabases()
     {
         $commonConfig = [
-            'host' => env('DB_HOST', '127.0.0.1'),
-            'port' => env('DB_PORT', '3306'),
-            'user' => env('DB_USERNAME', 'root'),
-            'pass' => env('DB_PASSWORD', ''),
+            'host' => env('DB_HOST', '114.69.243.148'),
+            'port' => env('DB_PORT', '47849'),
+            'user' => env('DB_USERNAME', 'keshav_sr'),
+            'pass' => env('DB_PASSWORD', 'Xr$7@Lp^e92#TfKz!qWd'),
         ];
 
         $dbNames = [
-            'shiwkes1_project_avish',
-            'univ_live',
-            'docs_shiwkes1_project_avish',
-            'laravel_media_server',
-            'it_consulting',
+            'keshav_sh',
+            'keshav_sp',
         ];
 
         return array_map(fn($dbName) => array_merge(['name' => $dbName], $commonConfig), $dbNames);
