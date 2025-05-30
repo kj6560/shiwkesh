@@ -74,4 +74,7 @@ class SiteController extends Controller
         }
         return response()->download($filePath);
     }
+    public function privacy(Request $request){
+        return view('frontend.privacy',['settings'=>$request->settings]);
+    }
 }
