@@ -10,7 +10,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/authorize', function () {
     $client = new Client();
-    $client->setAuthConfig(storage_path("db_backup/credentials_new.json"));
+    $client->setAuthConfig(storage_path("/app/public/db_backup/credentials_new.json"));
     $client->addScope('https://www.googleapis.com/auth/drive.file');
     $client->setRedirectUri(config('app.url') . '/callback');
 
