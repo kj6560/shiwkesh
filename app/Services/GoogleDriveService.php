@@ -66,7 +66,7 @@ class GoogleDriveService
             $service = new Google_Service_Drive($this->client);
             $file = new Google_Service_Drive_DriveFile();
             $file->setName(basename($filePath));
-            $file->setParents(["1T1aBffMm1QktZDA_uFpBBIBkBGzOFqqT"]); // Change folder ID
+            $file->setParents(["12lPOpb5niCsivhnjwNnBTMGX2H3QpmAi"]); // Change folder ID
 
             $content = file_get_contents($filePath);
             $mimeType = mime_content_type($filePath);
