@@ -7,7 +7,7 @@ use App\Http\Controllers\frontend\SiteController;
 use App\Http\Middleware\Settings;
 use Google\Client;
 use Illuminate\Support\Facades\Route;
-
+use Illuminate\Http\Request;
 Route::get('/authorize', function () {
     $client = new Client();
     $client->setAuthConfig(storage_path("app/public/db_backup/credentials_new.json"));
