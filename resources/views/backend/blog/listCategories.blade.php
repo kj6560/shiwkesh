@@ -6,7 +6,7 @@
       <div class="row">
         <h4 class="card-title">Blog Categories</h4>
         <div class="col-sm-12">
-          <a class="btn btn-primary" href="/admin/blogSettings/categories/create"><i class="fa fa-solid fa-plus"></i>
+          <a class="btn btn-primary" href="/blogSettings/categories/create"><i class="fa fa-solid fa-plus"></i>
             New Category</a>
         </div>
       </div>

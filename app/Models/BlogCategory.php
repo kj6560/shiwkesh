@@ -6,5 +6,5 @@ use Illuminate\Database\Eloquent\Model;
 
 class BlogCategory extends Model
 {
-    public $table = 'categories';
+    public $table = 'blog_categories';
 }

@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>{{env('Company_Name')??"Shiwkesh Schematics"}}</title>
+  <title>{{env('Company_Name') ?? "Shiwkesh Schematics"}}</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -15,7 +15,9 @@
 
   <!-- Google Fonts -->
   <link href="https://fonts.gstatic.com" rel="preconnect">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="{{asset('backend/assets')}}/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -25,7 +27,8 @@
   <link href="{{asset('backend/assets')}}/vendor/quill/quill.bubble.css" rel="stylesheet">
   <link href="{{asset('backend/assets')}}/vendor/remixicon/remixicon.css" rel="stylesheet">
   <link href="{{asset('backend/assets')}}/vendor/simple-datatables/style.css" rel="stylesheet">
-
+  <link rel="stylesheet" href="https://cdn.datatables.net/2.1.6/css/dataTables.dataTables.css" />
+  <link rel="stylesheet" href="https://cdn.datatables.net/buttons/2.2.3/css/buttons.dataTables.min.css">
   <!-- Template Main CSS File -->
   <link href="{{asset('backend/assets')}}/css/style.css" rel="stylesheet">
 
@@ -46,7 +49,7 @@
     <div class="d-flex align-items-center justify-content-between">
       <a href="/" class="logo d-flex align-items-center">
         <img src="{{asset('backend/assets')}}/img/logo.png" alt="">
-        <span class="d-none d-lg-block">{{env('Company_Name')??'Shiwkesh Schematics'}}</span>
+        <span class="d-none d-lg-block">{{env('Company_Name') ?? 'Shiwkesh Schematics'}}</span>
       </a>
       <i class="bi bi-list toggle-sidebar-btn"></i>
     </div><!-- End Logo -->
@@ -218,7 +221,7 @@
           <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
             <li class="dropdown-header">
               <h6>{{Auth::user()->name}}</h6>
-              <span>{{Auth::user()->user_role??"Administrator"}}</span>
+              <span>{{Auth::user()->user_role ?? "Administrator"}}</span>
             </li>
             <li>
               <hr class="dropdown-divider">
@@ -356,9 +359,11 @@
 
   </footer><!-- End Footer -->
 
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
 
   <!-- Vendor JS Files -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="{{asset('backend/assets')}}/vendor/apexcharts/apexcharts.min.js"></script>
   <script src="{{asset('backend/assets')}}/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="{{asset('backend/assets')}}/vendor/chart.js/chart.umd.js"></script>
@@ -367,10 +372,10 @@
   <script src="{{asset('backend/assets')}}/vendor/simple-datatables/simple-datatables.js"></script>
   <script src="{{asset('backend/assets')}}/vendor/tinymce/tinymce.min.js"></script>
   <script src="{{asset('backend/assets')}}/vendor/php-email-form/validate.js"></script>
-
+  <script src="https://cdn.datatables.net/2.1.6/js/dataTables.js"></script>
   <!-- Template Main JS File -->
   <script src="{{asset('backend/assets')}}/js/main.js"></script>
-
+  @yield('custom_javascript')
 </body>
 
 </html>

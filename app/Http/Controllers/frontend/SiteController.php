@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\frontend;
 
 use App\Http\Controllers\Controller;
+use App\Models\BlogPost;
 use App\Models\Downloads;
 use App\Models\Portfolio;
 use Illuminate\Http\Request;
@@ -12,7 +13,8 @@ class SiteController extends Controller
 {
     public function index(Request $request)
     {
-        return view('frontend.index', ['settings' => $request->settings]);
+        $blogs = BlogPost::join('blog_categories','blog_categories.id','=','blog_posts.category_id')->where('blog_posts.active',1)->orderBy('blog_posts.id','desc')->limit(3)->get();
+        return view('frontend.index', ['settings' => $request->settings,'blogs'=>$blogs]);
     }
     public function about(Request $request)
     {

@@ -6,5 +6,5 @@ use Illuminate\Database\Eloquent\Model;
 
 class BlogComment extends Model
 {
-    public $table = 'comments';
+    public $table = 'blog_comments';
 }

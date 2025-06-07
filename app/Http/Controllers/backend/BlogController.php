@@ -11,17 +11,54 @@ use App\Models\PostTags;
 use Illuminate\Support\Facades\Date;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Str;
+use Yajra\DataTables\DataTables;
 
 class BlogController extends Controller
 {
     public function index(Request $request)
     {
-        $posts = DB::table('blog_posts')
-            ->distinct()
-            ->join('blog_categories as categories', 'blog_posts.category_id', '=', 'categories.id')
-            ->select('blog_posts.id as id', 'blog_posts.title as title', 'categories.name as category', 'blog_posts.active as active')->get();
+        if ($request->ajax()) {
+            $posts = DB::table('blog_posts')
+                ->distinct()
+                ->join('blog_categories as categories', 'blog_posts.category_id', '=', 'categories.id')
+                ->select(
+                    'blog_posts.id as id',
+                    'blog_posts.title as title',
+                    'categories.name as category',
+                    'blog_posts.active as active'
+                );
 
-        return view('backend.blog.index', ['posts' => $posts]);
+            return DataTables::of($posts)
+                ->addColumn('status', function ($row) {
+                    return $row->active ? 'Active' : 'Inactive';
+                })
+                ->addColumn('action', function ($row) {
+                    $editUrl = "/blogSettings/blogs/edit/{$row->id}";
+                    $deleteUrl = "/blogSettings/blogs/delete/{$row->id}";
+
+                    $editButton = '';
+                    $deleteButton = '';
+
+                    $editButton = "<a href='$editUrl' class='dropdown-item'><i class='bx bx-edit-alt me-2'></i> Edit</a>";
+                    $deleteButton = "<a href='$deleteUrl' class='dropdown-item'><i class='bx bx-edit-alt me-2'></i> Delete</a>";
+
+                    return "
+                    <div class='dropdown'>
+                        <button type='button' class='btn p-0 dropdown-toggle hide-arrow' data-bs-toggle='dropdown'>
+                            <i class='bx bx-dots-vertical-rounded'></i>
+                        </button>
+                        <div class='dropdown-menu'>
+                            $editButton
+                            $deleteButton
+                        </div>
+                    </div>
+                ";
+                })
+                ->rawColumns(['action'])
+                ->addIndexColumn()
+                ->make(true);
+        }
+        return view('backend.blog.index', ['settings' => $request->settings]);
     }
     public function createBlog(Request $request)
     {
@@ -48,7 +85,7 @@ class BlogController extends Controller
     {
         $blogPost = BlogPost::find($id);
         $blogPost->delete();
-        return redirect('/admin/blogSettings')->with('success', 'Blog post deleted successfully');
+        return redirect('/blogSettings')->with('success', 'Blog post deleted successfully');
     }
     public function storeBlogPost(Request $request)
     {
@@ -71,7 +108,6 @@ class BlogController extends Controller
         $blogPost->user_id = auth()->user()->id;
         $blogPost->published_at = Date::now();
         $blogPost->show_on_homepage = $request->show_on_homepage;
-        $blogPost->show_large_on_homepage = $request->show_large_on_homepage;
         $blogPost->category_id = $request->category_id;
         $blogPost->active = $request->active;
         $blogPost->save();
@@ -101,9 +137,49 @@ class BlogController extends Controller
 
     public function listCategories(Request $request)
     {
-        $categories = DB::table('blog_categories as categories')
-            ->distinct()->get();
-        return view('backend.blog.listCategories', ['categories' => $categories]);
+        if ($request->ajax()) {
+            $categories = DB::table('blog_categories')
+                ->distinct();
+
+            return DataTables::of($categories)
+                ->orderColumn('id', function ($query, $order) {
+                    $query->orderBy('id', $order);
+                })
+                ->orderColumn('name', function ($query, $order) {
+                    $query->orderBy('name', $order);
+                })
+                ->orderColumn('slug', function ($query, $order) {
+                    $query->orderBy('slug', $order);
+                })
+                ->orderColumn('active', function ($query, $order) {
+                    $query->orderBy('active', $order);
+                })
+                ->addColumn('action', function ($row) {
+                    $editUrl = " /blogSettings/categories/edit/{$row->id}";
+                    $deleteUrl = " /blogSettings/categories/delete/{$row->id}";
+
+                    $editButton = '';
+                    $deleteButton = '';
+
+                    $editButton = "<a href='$editUrl' class='dropdown-item'><i class='bx bx-edit-alt me-2'></i> Edit</a>";
+                    $deleteButton = "<a href='$deleteUrl' class='dropdown-item'><i class='bx bx-edit-alt me-2'></i> Delete</a>";
+
+                    return "
+                    <div class='dropdown'>
+                        <button type='button' class='btn p-0 dropdown-toggle hide-arrow' data-bs-toggle='dropdown'>
+                            <i class='bx bx-dots-vertical-rounded'></i>
+                        </button>
+                        <div class='dropdown-menu'>
+                            $editButton
+                            $deleteButton
+                        </div>
+                    </div>
+                ";
+                })
+                ->rawColumns(['action'])
+                ->make(true);
+        }
+        return view('backend.blog.listCategories', ['settings' => $request->settings]);
     }
     public function createCategory(Request $request)
     {
@@ -127,13 +203,13 @@ class BlogController extends Controller
         $category->active = $request->active;
         $category->save();
 
-        return redirect('/admin/blogSettings/categories')->with('success', 'Category created successfully');
+        return redirect('blogSettings/categories')->with('success', 'Category created successfully');
     }
     public function deleteCategory(Request $request, $id)
     {
         $category = BlogCategory::find($id);
         $category->delete();
-        return redirect('/admin/blogSettings/categories')->with('success', 'Category deleted successfully');
+        return redirect(' /blogSettings/categories')->with('success', 'Category deleted successfully');
     }
     public function listTags(Request $request)
     {
@@ -155,9 +231,9 @@ class BlogController extends Controller
                     $query->orderBy('active', $order);
                 })
                 ->addColumn('action', function ($row) {
-                    $editUrl = "/admin/blogSettings/tags/edit/{$row->id}";
-                    $deleteUrl = "/admin/blogSettings/tags/delete/{$row->id}";
-                    $disableUrl = "/admin/blogSettings/tags/disable/{$row->id}";
+                    $editUrl = " /blogSettings/tags/edit/{$row->id}";
+                    $deleteUrl = " /blogSettings/tags/delete/{$row->id}";
+                    $disableUrl = " /blogSettings/tags/disable/{$row->id}";
 
                     $editButton = '';
                     $deleteButton = '';
@@ -206,12 +282,12 @@ class BlogController extends Controller
         $tag->active = $request->active;
         $tag->save();
 
-        return redirect('/admin/blogSettings/tags')->with('success', 'Tag created successfully');
+        return redirect('/blogSettings/tags')->with('success', 'Tag created successfully');
     }
     public function deleteTag(Request $request, $id)
     {
         $tag = BlogTag::find($id);
         $tag->delete();
-        return redirect('/admin/blogSettings/tags')->with('success', 'Tag deleted successfully');
+        return redirect(' /blogSettings/tags')->with('success', 'Tag deleted successfully');
     }
 }

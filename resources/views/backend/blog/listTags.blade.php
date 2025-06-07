@@ -6,7 +6,7 @@
       <div class="row">
         <h4 class="card-title">Blog Tags</h4>
         <div class="col-sm-12">
-          <a class="btn btn-primary" href="/admin/blogSettings/tags/create"><i class="fa fa-solid fa-plus"></i>
+          <a class="btn btn-primary" href="/blogSettings/tags/create"><i class="fa fa-solid fa-plus"></i>
             New Tag</a>
         </div>
       </div>

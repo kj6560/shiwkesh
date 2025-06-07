@@ -77,24 +77,24 @@ Route::middleware(['auth:web'])->group(function () {
 
     //blog settings
     Route::get('/blogSettings', [BlogController::class, 'index'])->name('blogSettings');
-    Route::get('/blogSettings/blogs/create', [BlogController::class, 'createBlog'])->name('admin.blogSettings.createBlog');
-    Route::get('/blogSettings/blogs/edit/{id}', [BlogController::class, 'editBlog'])->name('admin.blogSettings.editBlog');
-    Route::get('/blogSettings/blogs/delete/{id}', [BlogController::class, 'deleteBlog'])->name('admin.blogSettings.deleteBlog');
-    Route::post('/blogSettings/blogs/store', [BlogController::class, 'storeBlogPost'])->name('admin.blogSettings.storeBlogPost');
+    Route::get('/blogSettings/blogs/create', [BlogController::class, 'createBlog'])->name('blogSettings.createBlog');
+    Route::get('/blogSettings/blogs/edit/{id}', [BlogController::class, 'editBlog'])->name(' blogSettings.editBlog');
+    Route::get('/blogSettings/blogs/delete/{id}', [BlogController::class, 'deleteBlog'])->name(' blogSettings.deleteBlog');
+    Route::post('/blogSettings/blogs/store', [BlogController::class, 'storeBlogPost'])->name(' blogSettings.storeBlogPost');
 
     //blog categories
-    Route::get('/blogSettings/categories', [BlogController::class, 'listCategories'])->name('admin.blogSettings.blogCategories');
-    Route::get('/blogSettings/categories/create', [BlogController::class, 'createCategory'])->name('admin.blogSettings.createCategory');
-    Route::get('/blogSettings/categories/edit/{id}', [BlogController::class, 'editCategory'])->name('admin.blogSettings.editCategory');
-    Route::get('/blogSettings/categories/delete/{id}', [BlogController::class, 'deleteCategory'])->name('admin.blogSettings.deleteCategory');
-    Route::post('/blogSettings/categories/store', [BlogController::class, 'storeCategory'])->name('admin.blogSettings.storeCategory');
+    Route::get('/blogSettings/categories', [BlogController::class, 'listCategories'])->name(' blogSettings.blogCategories');
+    Route::get('/blogSettings/categories/create', [BlogController::class, 'createCategory'])->name(' blogSettings.createCategory');
+    Route::get('/blogSettings/categories/edit/{id}', [BlogController::class, 'editCategory'])->name(' blogSettings.editCategory');
+    Route::get('/blogSettings/categories/delete/{id}', [BlogController::class, 'deleteCategory'])->name(' blogSettings.deleteCategory');
+    Route::post('/blogSettings/categories/store', [BlogController::class, 'storeCategory'])->name(' blogSettings.storeCategory');
 
     //blog tags
-    Route::get('/blogSettings/tags', [BlogController::class, 'listTags'])->name('admin.blogSettings.blogTags');
-    Route::get('/blogSettings/tags/create', [BlogController::class, 'createTag'])->name('admin.blogSettings.createTag');
-    Route::get('/blogSettings/tags/edit/{id}', [BlogController::class, 'editTag'])->name('admin.blogSettings.editTag');
-    Route::get('/blogSettings/tags/delete/{id}', [BlogController::class, 'deleteTag'])->name('admin.blogSettings.deleteTag');
-    Route::post('/blogSettings/tags/store', [BlogController::class, 'storeTag'])->name('admin.blogSettings.storeTag');
+    Route::get('/blogSettings/tags', [BlogController::class, 'listTags'])->name(' blogSettings.blogTags');
+    Route::get('/blogSettings/tags/create', [BlogController::class, 'createTag'])->name(' blogSettings.createTag');
+    Route::get('/blogSettings/tags/edit/{id}', [BlogController::class, 'editTag'])->name(' blogSettings.editTag');
+    Route::get('/blogSettings/tags/delete/{id}', [BlogController::class, 'deleteTag'])->name(' blogSettings.deleteTag');
+    Route::post('/blogSettings/tags/store', [BlogController::class, 'storeTag'])->name(' blogSettings.storeTag');
 
     //portfolio settings
     Route::get('/portfolioSettings', [PortfolioSettingsController::class, 'index'])->name('portfolioSettings');
