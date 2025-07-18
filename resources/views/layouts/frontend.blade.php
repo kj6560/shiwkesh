@@ -118,16 +118,13 @@
           <div class="col-lg-2 col-md-3 footer-links">
             <h4>Our Services</h4>
             <ul>
-              <li><a href="/services">Web Design</a></li>
-              <li><a href="/services">Web Development</a></li>
-              <li><a href="/services">Product Management</a></li>
-              <li><a href="/services">Marketing</a></li>
-              <li><a href="/services">Graphic Design</a></li>
+              <li><a href="/webdesign">Web Design</a></li>
+              <li><a href="/mobileApplications">Mobile Applications</a></li>
+              <li><a href="/productManagement">Product Management</a></li>
+              <li><a href="/marketing">Marketing</a></li>
+              <li><a href="/graphicDesign">Graphic Design</a></li>
             </ul>
           </div>
-
-          
-
         </div>
       </div>
     </div>
@@ -139,11 +136,7 @@
           <div>
             © Copyright <strong><span>{{env('Company_Full_Name')}}</span></strong> All Rights Reserved
           </div>
-
         </div>
-
-        
-
       </div>
     </div>
 

@@ -88,4 +88,24 @@ class SiteController extends Controller
     {
         return view('frontend.terms', ['settings' => $request->settings]);
     }
+    public function webdesign(Request $request)
+    {
+        return view('frontend.webdesign', ['settings' => $request->settings]);
+    }
+    public function mobileApplications(Request $request)
+    {
+        return view('frontend.mobileApplications', ['settings' => $request->settings]);
+    }
+    public function productManagement(Request $request)
+    {
+        return view('frontend.productManagement', ['settings' => $request->settings]);
+    }
+    public function marketing(Request $request)
+    {
+        return view('frontend.marketing', ['settings' => $request->settings]);
+    }
+    public function graphicDesign(Request $request)
+    {
+        return view('frontend.graphicDesign', ['settings' => $request->settings]);
+    }
 }
