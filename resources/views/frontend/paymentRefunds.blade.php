@@ -33,7 +33,7 @@
       </li>
       <li><strong>Refund Process:</strong> 
         <ul>
-          <li>Email your refund request to <strong>support@yourcompany.com</strong> with payment proof and reason.</li>
+          <li>Email your refund request to <strong>kj6560@gmail.com</strong> with payment proof and reason.</li>
           <li>Refunds are processed within 7–10 business days to the original payment method.</li>
         </ul>
       </li>
