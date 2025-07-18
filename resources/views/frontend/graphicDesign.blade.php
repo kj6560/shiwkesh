@@ -22,8 +22,8 @@
 
                 <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
                     <div class="services-list">
-                        <a href="#" class="active">Web Design</a>
-                        <a href="#">Software Development</a>
+                        <a href="#" >Web Design</a>
+                        <a href="#" class="active">Software Development</a>
                         <a href="#">Product Management</a>
                         <a href="#">Graphic Design</a>
                         <a href="#">Marketing</a>
