@@ -13,8 +13,8 @@ class SiteController extends Controller
 {
     public function index(Request $request)
     {
-        $blogs = BlogPost::join('blog_categories','blog_categories.id','=','blog_posts.category_id')->where('blog_posts.active',1)->orderBy('blog_posts.id','desc')->limit(3)->get();
-        return view('frontend.index', ['settings' => $request->settings,'blogs'=>$blogs]);
+        $blogs = BlogPost::join('blog_categories', 'blog_categories.id', '=', 'blog_posts.category_id')->where('blog_posts.active', 1)->orderBy('blog_posts.id', 'desc')->limit(3)->get();
+        return view('frontend.index', ['settings' => $request->settings, 'blogs' => $blogs]);
     }
     public function about(Request $request)
     {
@@ -26,7 +26,11 @@ class SiteController extends Controller
     }
     public function blog(Request $request)
     {
-        return view('frontend.blog', ['settings' => $request->settings]);
+        $blogs = BlogPost::join('blog_categories', 'blog_categories.id', '=', 'blog_posts.category_id')
+            ->where('blog_posts.active', 1)
+            ->orderBy('blog_posts.id', 'desc')
+            ->get();
+        return view('frontend.blog', ['settings' => $request->settings, "blogs" => $blogs]);
     }
     public function blogDetails(Request $request)
     {
@@ -35,7 +39,7 @@ class SiteController extends Controller
     public function portfolio(Request $request)
     {
         $portfolios = Portfolio::where('is_active', 1)->get();
-        return view('frontend.portfolio', ['settings' => $request->settings,'portfolios'=>$portfolios]);
+        return view('frontend.portfolio', ['settings' => $request->settings, 'portfolios' => $portfolios]);
     }
     public function services(Request $request)
     {
@@ -64,7 +68,7 @@ class SiteController extends Controller
     public function downloads(Request $request)
     {
         $downloads = Downloads::where('is_available', 1)->get();
-        return view('frontend.downloads', ['settings' => $request->settings,'downloads'=>$downloads]);
+        return view('frontend.downloads', ['settings' => $request->settings, 'downloads' => $downloads]);
     }
     public function downloadFile(Request $request)
     {
@@ -76,10 +80,12 @@ class SiteController extends Controller
         }
         return response()->download($filePath);
     }
-    public function privacy(Request $request){
-        return view('frontend.privacy',['settings'=>$request->settings]);
+    public function privacy(Request $request)
+    {
+        return view('frontend.privacy', ['settings' => $request->settings]);
     }
-        public function terms(Request $request){
-        return view('frontend.terms',['settings'=>$request->settings]);
+    public function terms(Request $request)
+    {
+        return view('frontend.terms', ['settings' => $request->settings]);
     }
 }

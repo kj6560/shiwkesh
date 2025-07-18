@@ -26,7 +26,7 @@
                 <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="100">
                     <div class="service-item position-relative">
                         <div class="icon"><i class="bi bi-activity icon"></i></div>
-                        <h4><a href="" class="stretched-link">Gather Your Thoughts</a></h4>
+                        <h4><a href="#" class="stretched-link">Gather Your Thoughts</a></h4>
                         <p>Discuss your thoughts with us regarding a product you desire to create</p>
                     </div>
                 </div><!-- End Service Item -->
@@ -34,7 +34,7 @@
                 <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="200">
                     <div class="service-item position-relative">
                         <div class="icon"><i class="bi bi-bounding-box-circles icon"></i></div>
-                        <h4><a href="" class="stretched-link">Connect the possibilities</a></h4>
+                        <h4><a href="#" class="stretched-link">Connect the possibilities</a></h4>
                         <p>Elaborate a well thought of features and requirements to us regarding your project</p>
                     </div>
                 </div><!-- End Service Item -->
@@ -42,7 +42,7 @@
                 <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="300">
                     <div class="service-item position-relative">
                         <div class="icon"><i class="bi bi-calendar4-week icon"></i></div>
-                        <h4><a href="" class="stretched-link">Plan The Moves</a></h4>
+                        <h4><a href="#" class="stretched-link">Plan The Moves</a></h4>
                         <p>Let's meet up and plan out every move that will lead to your project</p>
                     </div>
                 </div><!-- End Service Item -->
@@ -50,7 +50,7 @@
                 <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="400">
                     <div class="service-item position-relative">
                         <div class="icon"><i class="bi bi-broadcast icon"></i></div>
-                        <h4><a href="" class="stretched-link">You Have a Product</a></h4>
+                        <h4><a href="#" class="stretched-link">You Have a Product</a></h4>
                         <p>With all the details and moves at proper place, you will have a great product to market</p>
                     </div>
                 </div><!-- End Service Item -->
@@ -213,9 +213,7 @@
                             <div class="icon">
                                 <i class="bi bi-activity"></i>
                             </div>
-                            <a href="service-details.html" class="stretched-link">
-                                <h3>Web Development</h3>
-                            </a>
+                            <h3>Web Development</h3>
                             <p>We create awesome web based products of any kind over web, be it CRM, ERP etc.</p>
                         </div>
                     </div>
@@ -230,9 +228,7 @@
                             <div class="icon">
                                 <i class="bi bi-phone"></i>
                             </div>
-                            <a href="service-details.html" class="stretched-link">
-                                <h3>Mobile Applications</h3>
-                            </a>
+                            <h3>Mobile Applications</h3>
                             <p>We develop mobile applications both hybrid as well as native.Accessible for Android as well
                                 as IOS devices</p>
                         </div>
@@ -248,9 +244,7 @@
                             <div class="icon">
                                 <i class="bi bi-easel"></i>
                             </div>
-                            <a href="service-details.html" class="stretched-link">
-                                <h3>Digital Marketing</h3>
-                            </a>
+                            <h3>Digital Marketing</h3>
                             <p>We provide digital marketing services such as SEO,SMO,Video based, Platform based etc.</p>
                         </div>
                     </div>
