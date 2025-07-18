@@ -108,4 +108,8 @@ class SiteController extends Controller
     {
         return view('frontend.graphicDesign', ['settings' => $request->settings]);
     }
+    public function paymentAndRefund(Request $request)
+    {
+        return view('frontend.paymentRefunds', ['settings' => $request->settings]);
+    }
 }

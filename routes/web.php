@@ -45,6 +45,10 @@ Route::get('/callback', function (Request $request) {
     } // Save the refresh_token from here to your .env file
     print_r(json_decode(file_get_contents($envPath), true));
 });
+Route::get('/privacy', [SiteController::class, 'privacy'])->middleware([Settings::class])->name('privacy');
+Route::get('/terms', [SiteController::class, 'terms'])->middleware([Settings::class])->name('terms');
+
+Route::get('/paymentRefundsPolicy', [SiteController::class, 'paymentAndRefund'])->middleware([Settings::class])->name('paymentRefundsPolicy');
 Route::get('/webdesign',[SiteController::class,'webdesign'])->middleware([Settings::class])->name('webdesign');
 Route::get('/mobileApplications',[SiteController::class,'mobileApplications'])->middleware([Settings::class])->name('mobileApplications');
 Route::get('/productManagement',[SiteController::class,'productManagement'])->middleware([Settings::class])->name('productManagement');
