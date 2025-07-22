@@ -66,7 +66,7 @@
             <div class="icon">
               <i class="bi bi-activity"></i>
             </div>
-            <a href="service-details.html" class="stretched-link">
+            <a href="#" class="stretched-link">
               <h3>Web Development</h3>
             </a>
             <p>We create awesome web based products of any kind over web, be it CRM, ERP etc.</p>
@@ -83,7 +83,7 @@
             <div class="icon">
               <i class="bi bi-phone"></i>
             </div>
-            <a href="service-details.html" class="stretched-link">
+            <a href="#" class="stretched-link">
               <h3>Mobile Applications</h3>
             </a>
             <p>We develop mobile applications both hybrid as well as native.Accessible for Android as well as IOS devices</p>
@@ -100,7 +100,7 @@
             <div class="icon">
               <i class="bi bi-easel"></i>
             </div>
-            <a href="service-details.html" class="stretched-link">
+            <a href="#" class="stretched-link">
               <h3>Digital Marketing</h3>
             </a>
             <p>We provide digital marketing services such as SEO,SMO,Video based, Platform based etc.</p>
