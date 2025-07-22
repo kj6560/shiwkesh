@@ -7,7 +7,7 @@
     <!-- Section Title -->
     <div class="container section-title" data-aos="fade-up">
         <h2>Contact</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+        <p>You can reach us through the following channels. We are always available for any feedback and queries. Get in touch with us for a fascinating journey</p>
     </div><!-- End Section Title -->
 
     <div class="mb-5">
